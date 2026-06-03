@@ -35,6 +35,7 @@ public class Sistema {
             System.out.println("\n2. Consultar atendimento; ");
             System.out.println("\n\n0. Encerrar programa; ");
             opcao = scanner.nextInt();
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1:
