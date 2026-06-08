@@ -1,0 +1,1 @@
+Repositório dedicado ao sistema desenvolvido em grupo para obtenção de nota na disciplina de Análise e Projeto Orientado a Objetos, no Terceiro Semestre do curso Análise e Desenvolvimento de Sistemas, da Unicesumar (Maringá-PR).
