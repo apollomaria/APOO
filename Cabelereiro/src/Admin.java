@@ -21,4 +21,9 @@ public class Admin {
         return pro;
     }
 
+    void consultarAgenda() {
+    }
+
+    void consultarRelatorio() {
+    }
 }

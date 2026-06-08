@@ -1,6 +1,7 @@
-public class Atendimento {
+public abstract class Atendimento {
+
     protected String servico;
-    protected float valor;
+    protected double valor;
 
     // COMPOSIÇÃO (Atendimento é FILHO de Agenda)
     private Agenda agendaPai;
@@ -11,8 +12,7 @@ public class Atendimento {
     // COMPOSIÇÃO (Atendimento é PAI de Pagamento)
     private Pagamento pagamento;
 
-    // CONSTRUTOR
-    public Atendimento(String servico, float valor) {
+    public Atendimento(String servico, double valor) {
         this.servico = servico;
         this.valor = valor;
 
@@ -20,18 +20,9 @@ public class Atendimento {
         this.pagamento = new Pagamento(this);
     }
 
-    public void setServico(String servico) {
-        this.servico = servico;
-    }
-
     public String getServico() {
         return servico;
     }
 
-    public double calcularValor() {
-        return this.valor;
-    }
-
-
-
+    public abstract double calcularValor();
 }

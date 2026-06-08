@@ -1,11 +1,11 @@
 public class Cliente {
-    private String nome;    
+    private String nome;
     private String cpf;
     private String telefone;
     private String numeroCartao;
     private String codigoSegurancaCartao;
     private boolean VIP;
- 
+
     // COMPOSIÇÃO (Cliente é FILHO de Agenda)
     private Agenda agendaPai;
     public Cliente(Agenda pai) {
@@ -21,43 +21,44 @@ public class Cliente {
         this.VIP = VIP;
     }
 
-    public Cliente() {
-        
-    }
+    public Cliente() {}
 
-    public String getNome() {
-        return nome;
+    public String getNome() { 
+        return nome; 
     }
-
     public void setNome(String nome) {
-        this.nome = nome;
+        this.nome = nome; 
     }
 
     public String getCpf() {
-        return cpf;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+        return cpf; 
     }
 
     public String getTelefone() {
-        return telefone;
+        return telefone; 
+    }
+    public void setTelefone(String telefone) { 
+        this.telefone = telefone; 
     }
 
-    public String getNumeroCartao() {
-        return numeroCartao;
+    public String getNumeroCartao() { 
+        return numeroCartao; 
+    }
+    public void setNumeroCartao(String numeroCartao) {
+        this.numeroCartao = numeroCartao; 
     }
 
     public String getCodigoSegurancaCartao() {
-        return codigoSegurancaCartao;
+        return codigoSegurancaCartao; 
+    }
+    public void setCodigoSegurancaCartao(String codigo) {
+        this.codigoSegurancaCartao = codigo; 
     }
 
-    public void setVIP(boolean VIP) {
-        this.VIP = VIP;
+    public boolean getVip() {
+        return VIP; 
     }
-
-    public boolean getVIP() {
-        return VIP;
+    public void setVip(boolean VIP) {
+        this.VIP = VIP; 
     }
 }

@@ -36,21 +36,23 @@ public class Unha extends Atendimento {
 
     @Override
     public double calcularValor() {
+        this.valor = 70;
+        
         switch (tipo) {
             case "gel":
-                this.valor = (float) (this.valor * 1.5);
+                this.valor = (5 * 1.5);
                 break;
 
             case "acrílica":
-                this.valor = (float) (this.valor * 1.7);
+                this.valor = (4 * 1.7);
                 break;
 
             case "esmaltação":
-                this.valor = (float) (this.valor * 1.3);
+                this.valor = (3 * 1.3);
                 break;                
 
             case "limpeza":
-                this.valor = (float) (this.valor * 1.4);
+                this.valor = (2 * 1.4);
                 break;
 
             default:
@@ -59,15 +61,15 @@ public class Unha extends Atendimento {
 
         switch (local) {
             case "mão":
-                this.valor = (float) (this.valor * 1.3);
+                this.valor = this.valor + (2 * 1.3);
                 break;
 
             case "pé":
-                this.valor = (float) (this.valor * 1.5);
+                this.valor = this.valor + (4 * 1.5);
                 break;
 
             case "ambos":
-                this.valor = (float) (this.valor * 1.7);
+                this.valor = this.valor + (6 * 1.7);
                 break;                
 
             default:

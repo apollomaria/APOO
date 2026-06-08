@@ -13,4 +13,8 @@ public class Relatorio {
     public String getTipo() {
         return tipo;
     }
+
+    void gerarRelatorio() {
+        
+    }
 }

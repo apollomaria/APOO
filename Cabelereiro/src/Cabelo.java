@@ -3,7 +3,7 @@ public class Cabelo extends Atendimento {
     private String corte;
     private String tamanho;
     private String procedimento;
-
+    
     public Cabelo(String servico, float valor, String tipo, String corte, String tamanho, String procedimento) {
         super(servico, valor); 
         this.tipo = tipo;
@@ -46,18 +46,19 @@ public class Cabelo extends Atendimento {
 
     @Override
     public double calcularValor() {
+        this.valor = 100;
 
         switch (tamanho) {
             case "curto":
-                this.valor = (float) (this.valor * 1.2);
+                this.valor = (5 * 1.2);
                 break;
 
             case "médio":
-                this.valor = (float) (this.valor * 1.7);
+                this.valor = (7 * 1.7);
                 break;
 
             case "longo":
-                this.valor = (float) (this.valor * 2.2);
+                this.valor = (9 * 2.2);
                 break;
 
             default:
@@ -66,15 +67,15 @@ public class Cabelo extends Atendimento {
 
         switch (procedimento) {
             case "corte":
-                this.valor = (float) (this.valor * 1.2);
+                this.valor = this.valor + (2 * 1.2);
                 break;
 
             case "hidratação":
-                this.valor = (float) (this.valor * 1.7);
+                this.valor = this.valor + (4 * 1.7);
                 break;
 
             case "pintura":
-                this.valor = (float) (this.valor * 2.2);
+                this.valor = this.valor + (6 * 2.2);
                 break;
 
             default:

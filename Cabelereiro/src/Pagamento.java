@@ -1,7 +1,7 @@
 public class Pagamento {
-    private Atendimento atendimentoPai;
     private String formaDePagamento;
 
+    private Atendimento atendimentoPai;
     public Pagamento(Atendimento pai) {
 		this.atendimentoPai = pai;
 	}
@@ -19,14 +19,9 @@ public class Pagamento {
     }
 
     public float verificarDesconto(float valor, boolean VIP) {
-
         if (VIP) {
-            valor = (float) (valor * 0.1);
-        } 
-
+            valor = (float) (valor * 0.9);
+        }
         return valor;
-    }    
-
-
-
+    }
 }
